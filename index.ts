@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std@0.135.0/http/server.ts";
 
-serve((req) => {
+serve(() => {
     try {
         return new Response(JSON.stringify({
             epochTime: Date.now(),
